@@ -6,19 +6,20 @@ Welcome to the AI Variant Data Analyst Internship Project: Supply Chain Manageme
 The Excel dashboard serves as a quick-access platform for visualising crucial financial insights from the supply chain data. It is designed with a clean and organised layout that prioritises clarity and comprehension. 
 The dashboard utilises various data visualisation components such as pie chart ,stacked area-clustered column chart,, line graphs, and PivotTables to represent key performance indicators (KPIs) such as month wise sales trend, orders by region , sales and profit by region .it offers year and region filters as well.
 
-![Screenshot 2024-02-12 at 6 23 12 PM](https://github.com/arjun21112000/Supply-chain-management-/assets/159052306/09626503-72ec-4917-a488-df5a7b4b8a0b)
+![EXCEL DASHBOARD ](https://github.com/arjun21112000/Supply-chain-management-/assets/159052306/cd2b36ec-5d1d-4e9d-817c-17c92b0f4be4)
+
 
 
 
 ### Tableau Dashboard
 The Tableau dashboard provides an interactive platform for in-depth analysis of supply chain data, facilitating a deeper understanding of Customer behaviours and patterns. Its design follows a clean and modern approach, with visuals strategically positioned for a cohesive data exploration experience. The dashboard integrates a variety of data visualisation components, including pie chart, bar charts, and line graph, to depict KPIs such as Top 10 store sales wise, region wise and brand wise sales . 
 
-![T1](https://github.com/DeveshGaonkar/Bank_Analytics/assets/138006145/dcf99827-08a6-4b20-8beb-e27bed4713a4)
+![TABLEAU DASHBOARD ](https://github.com/arjun21112000/Supply-chain-management-/assets/159052306/b5b3703c-fd15-4782-9714-73d5fb2b6199)
+
 
 
 Users can interact with filters to dynamically adjust visualisations, and hovering over data points reveals detailed tooltips that enhance user comprehension. Dashboard actions and filters, such as filter actions , enable users to explore correlations and details by interacting with one visualisation to affect others.
 
-![T2](https://github.com/DeveshGaonkar/Bank_Analytics/assets/138006145/7aff8b64-9f38-4ec4-a867-6b2dd9c08ede)
 
 
 ## SQL Queries and Data Analysis
