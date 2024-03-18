@@ -178,7 +178,7 @@ The SQL analysis reveals trends such as brand wise sales explain which brand hav
 
 ## Usage Instructions
 ### Cloning the Repository:
-Clone the project repository using the command `git clone https://github.com/DeveshGaonkar/Bank_Analytics` in your preferred terminal. This creates a local copy of the project files on your machine.
+Clone the project repository using the command `https://github.com/arjun21112000/Supply-chain-management-` in your preferred terminal. This creates a local copy of the project files on your machine.
 
 ### Setting Up Data Sources:
 To work with the dashboards and SQL queries, ensure Product_data.csv, Store.csv, Inventory.csv, customers.csv,  sales.csv and Point_of_sales.csv are available in the designated folders. Open the respective dashboard tools and link these datasets to your project.
@@ -211,7 +211,7 @@ Future work could involve advanced SQL analysis or integration with live data so
 - **Name:** Arjun Lalchandra Yadav
 - **Email Address:** arjun21112000@gmail.com
 - **LinkedIn Profile:**  https://www.linkedin.com/in/arjun-yadav21/
-- **GitHub Repository:** Supply-chain-management-
+- **GitHub Repository:** [Supply-chain-management-](https://github.com/arjun21112000/Supply-chain-management-)
 
 ## Additional Resources 
 [Link to the Tableau.](https://public.tableau.com/views/Tableausupply_chain/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)  
