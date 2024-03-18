@@ -28,10 +28,12 @@ Users can interact with filters to dynamically adjust visualisations, and hoveri
 
 SQL queries played a crucial role in deriving valuable insights from the supply chain datasets, enabling the extraction and transformation for actionable insight.
 
-### Query 1: REGION WISE SALES
+## Query 1: REGION WISE SALES
 
 **SQL Query:**
-```SELECT 
+
+```
+     SELECT 
     		ROUND(SUM(PS.SALES_AMOUNT)/1000000,2) AS TOTAL_SALE_IN_MILLIONS,
     		SE.STORE_REGION
      from
@@ -44,17 +46,18 @@ SQL queries played a crucial role in deriving valuable insights from the supply 
    		 S.STORE_KEY = SE.STORE_KEY
      GROUP BY 
 		SE.STORE_REGION;
+```
+
+**SQL Query Output:**
+
+![REGION WISE SALE](https://github.com/arjun21112000/Supply-chain-management-/assets/159052306/0f92cbed-e4ba-4df1-805d-62c6059510b9)
 
 
-
-![sk01](https://github.com/DeveshGaonkar/Bank_Analytics/assets/138006145/cdfa8867-57dc-451b-9f3f-912ced3e7359)
-
-
-### Query 2: TOTAL PROFIT
+## Query 2: TOTAL PROFIT
 **SQL Query:**
 ```
      SELECT
-    		ROUND(SUM(TOTAL_SALE - Monthly_Rent_Cost)/1000000,1)AS NET_PROFIT
+    		ROUND(SUM(TOTAL_SALE - Monthly_Rent_Cost)/1000000,1)AS Total_profit
      FROM (
 
      	SELECT
@@ -75,10 +78,13 @@ SQL queries played a crucial role in deriving valuable insights from the supply 
      ) AS Sub;
 ```
 
-![sk02](https://github.com/DeveshGaonkar/Bank_Analytics/assets/138006145/13d7c37d-3c30-41c3-968c-5cffaa775be7)
+
+**SQL Query Output:**
+
+![Total_profit](https://github.com/arjun21112000/Supply-chain-management-/assets/159052306/d10f9364-1737-4fc2-af05-e8b0fb835f73)
 
 
-### Query 3: BRAND WISE SALES 
+## Query 3: BRAND WISE SALES 
 **SQL Query:**
 
 ```sql
@@ -98,10 +104,11 @@ SQL queries played a crucial role in deriving valuable insights from the supply 
 		limit 10;
 ```
 
-![sk03](https://github.com/DeveshGaonkar/Bank_Analytics/assets/138006145/9bc189ca-94e7-4939-8d40-d4978c6a9258)
+**SQL Query Output:**
 
+![Brand wise sales](https://github.com/arjun21112000/Supply-chain-management-/assets/159052306/8a433ffc-fc58-4f2f-bae4-c9ee6e2b3107)
 
-### Query 4: TOP 10 STORES SALES WISE.
+## Query 4: TOP 10 STORES SALES WISE.
 **SQL Query:**
 ```
 	SELECT 
@@ -127,10 +134,13 @@ SQL queries played a crucial role in deriving valuable insights from the supply 
 	LIMIT 10;
 ```
 
-![sk04](https://github.com/DeveshGaonkar/Bank_Analytics/assets/138006145/f3b51046-4c8d-44f4-a6ea-5acf485f98f5)
+**SQL Query Output:**
+
+![Top 10 store wise sale](https://github.com/arjun21112000/Supply-chain-management-/assets/159052306/07f4aca0-97f9-49c5-9bee-f3019335741c)
 
 
-### Query 5: MONTH WISE SALES FOR PARTICULAR YEAR 
+
+## Query 5: MONTH WISE SALES FOR PARTICULAR YEAR 
 **SQL Query:**
 
 ```sql
@@ -146,7 +156,7 @@ SQL queries played a crucial role in deriving valuable insights from the supply 
     			PS.Order_Number = S.Order_Number
 
 	WHERE 
-			S.DATE >= "2023-01-01" AND S.DATE <= "2023-12-31" 
+			S.DATE >= "2022-01-01" AND S.DATE <= "2022-12-31" 
 
 	GROUP BY
 			MONTHS
@@ -155,7 +165,10 @@ SQL queries played a crucial role in deriving valuable insights from the supply 
 			 MONTHS asc;
 ```
 
-![sk05](https://github.com/DeveshGaonkar/Bank_Analytics/assets/138006145/1be08acb-fe5c-4bb1-a445-9bdd165cbc98)
+**SQL Query Output:**
+
+![Month wise sales ](https://github.com/arjun21112000/Supply-chain-management-/assets/159052306/aa75462d-a477-4a95-a230-b908b41e5cf6)
+
 
 ## SQL Code and Explanation
 Each query's SQL code is designed to retrieve, aggregate, and calculate specific metrics. Explanation accompanying the code provides clarity on the logic applied and the importance of the query within the project's context.
