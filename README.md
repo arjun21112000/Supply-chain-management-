@@ -1,5 +1,69 @@
-Introduction 
+# AI VARIANT DATA ANALYST INTERNSHIP PROJECT: SUPPLY CHAIN ANALYSIS
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Project Overview](#project-overview)
+3. [Key Performance Indicators (KPIs)](#key-performance-indicators-kpis)
+4. [Data Collection and Preprocessing](#data-collection-and-preprocessing)
+    - [Data Sources](#data-sources)
+    - [Data Cleaning and Transformation](#data-cleaning-and-transformation)
+5. [Dashboard Creation](#dashboard-creation)
+    - [Excel Dashboard](#excel-dashboard)
+    - [Tableau Dashboard](#tableau-dashboard)
+6. [SQL Queries and Data Analysis](#sql-queries-and-data-analysis)
+    - [Purpose of SQL Queries](#purpose-of-sql-queries)
+    - [Query 1: REGION WISE SALES](#query-1-REGION-WISE-SALES)
+    - [Query 2: TOTAL PROFIT](#query-2-TOTAL-PROFIT)
+    - [Query 3: BRAND WISE SALES](#query-3-BRAND-WISE-SALES)
+    - [Query 4: TOP 10 STORES SALES WISE](#query-4-TOP-10-STORES-SALES-WISE)
+    - [Query 5: MONTH WISE SALES FOR PARTICULAR YEAR](#query-5-MONTH-WISE-SALES-FOR-PARTICULAR-YEAR)
+    - [SQL Code and Explanation](#sql-code-and-explanation)
+    - [Insights from SQL Analysis](#insights-from-sql-analysis)
+7. [Usage Instructions](#usage-instructions)
+8. [Conclusion](#conclusion)
+9. [Contact Information](#contact-information)
+10. [Additional Resources](#additional-resources)
+
+## Introduction 
+
 Welcome to the AI Variant Data Analyst Internship Project: Supply Chain Management Project! This project was completed during an internship at AI Variant as part of the Data Analyst course at ExcelR. The project involves the analysis of Supply Chain data and the creation of interactive dashboards using tools like Excel, Tableau, and SQL. The datasets used are Product_data, Store, Inventory, customers,  sales and Point_of_sales  each containing between 200 to 100000+ records 
+
+## Project Overview
+
+- **Domain:** Logistic
+- **Project:** Supply chain management 
+- **Datasets:** Product_data.csv, Store.csv, Inventory.csv, customers.csv,  sales.csv and Point_of_sales.csv
+- **Dataset Type:** Csv
+- **Dataset Size:** between 200 to 100000+ records
+
+## Key Performance Indicators (KPIs)
+
+The project focuses on five key performance indicators (KPIs) to gain insights from the supply chain data:
+
+1. Sales and profit by region.
+
+2. Monthly sales.
+
+3. Brand Wise sales.
+
+4. Top 10 stores by sales.
+   
+5. Orders by region.
+
+6. Sales Growth. 
+
+## Data Collection and Preprocessing
+
+### Data Sources
+
+The datasets (Product_data.csv, Store.csv, Inventory.csv, customers.csv,  sales.csv and Point_of_sales.csv).
+
+### Data Cleaning and Transformation
+
+The datasets underwent thorough data preprocessing, including handling missing values, data type conversions, and removing duplicates. 
+
+
 ## Dashboard Creation
 
 ### Excel Dashboard
@@ -28,11 +92,11 @@ Users can interact with filters to dynamically adjust visualisations, and hoveri
 
 SQL queries played a crucial role in deriving valuable insights from the supply chain datasets, enabling the extraction and transformation for actionable insight.
 
-## Query 1: REGION WISE SALES
+### Query 1: REGION WISE SALES
 
 **SQL Query:**
 
-```
+```sql
      SELECT 
     		ROUND(SUM(PS.SALES_AMOUNT)/1000000,2) AS TOTAL_SALE_IN_MILLIONS,
     		SE.STORE_REGION
@@ -53,9 +117,9 @@ SQL queries played a crucial role in deriving valuable insights from the supply 
 ![REGION WISE SALE](https://github.com/arjun21112000/Supply-chain-management-/assets/159052306/0f92cbed-e4ba-4df1-805d-62c6059510b9)
 
 
-## Query 2: TOTAL PROFIT
+### Query 2: TOTAL PROFIT
 **SQL Query:**
-```
+```sql
      SELECT
     		ROUND(SUM(TOTAL_SALE - Monthly_Rent_Cost)/1000000,1)AS Total_profit
      FROM (
@@ -84,7 +148,7 @@ SQL queries played a crucial role in deriving valuable insights from the supply 
 ![Total_profit](https://github.com/arjun21112000/Supply-chain-management-/assets/159052306/d10f9364-1737-4fc2-af05-e8b0fb835f73)
 
 
-## Query 3: BRAND WISE SALES 
+### Query 3: BRAND WISE SALES 
 **SQL Query:**
 
 ```sql
@@ -108,9 +172,9 @@ SQL queries played a crucial role in deriving valuable insights from the supply 
 
 ![Brand wise sales](https://github.com/arjun21112000/Supply-chain-management-/assets/159052306/8a433ffc-fc58-4f2f-bae4-c9ee6e2b3107)
 
-## Query 4: TOP 10 STORES SALES WISE.
+### Query 4: TOP 10 STORES SALES WISE.
 **SQL Query:**
-```
+```sql
 	SELECT 
    			 ROUND(SUM(PS.SALES_AMOUNT)/1000000,2) AS TOTAL_SALE_IN_MILLIONS,
 			SE.STORE_NAME AS TOP_10_STORES
@@ -140,7 +204,7 @@ SQL queries played a crucial role in deriving valuable insights from the supply 
 
 
 
-## Query 5: MONTH WISE SALES FOR PARTICULAR YEAR 
+### Query 5: MONTH WISE SALES FOR PARTICULAR YEAR 
 **SQL Query:**
 
 ```sql
